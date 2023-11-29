@@ -28,11 +28,25 @@ namespace Teste2
 
         public bool CanBeConnect(Friend friendC)
         {
-            return true;
+            foreach (Friend friend in this.Friends)
+            {
+                if (friendC.Friends.Contains(friend)) return true;
+            }
+            return false;
         }
 
         static void Main(string[] args)
         {
+            Friend friendA = new Friend("friendA@gmail.com");
+            Friend friendB = new Friend("friendB@gmail.com");
+            Friend friendC = new Friend("friendC@gmail.com");
+            Friend friendD = new Friend("friendD@gmail.com");
+
+            friendA.AddFriendship(friendB);
+            friendC.AddFriendship(friendB);
+
+            Console.WriteLine(friendA.CanBeConnect(friendC));
+            Console.WriteLine(friendD.CanBeConnect(friendC));
         }
     }
 }

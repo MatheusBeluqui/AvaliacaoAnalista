@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "\\\\SV04D-APP\\Sistemas$\\Weslley\\Teste-Pratico\\Teste1\\Teste1.csproj": {}
+    "C:\\Projetos\\Nova pasta\\AvaliacaoAnalista\\Teste1\\Teste1.csproj": {}
   },
   "projects": {
-    "\\\\SV04D-APP\\Sistemas$\\Weslley\\Teste-Pratico\\Teste1\\Teste1.csproj": {
+    "C:\\Projetos\\Nova pasta\\AvaliacaoAnalista\\Teste1\\Teste1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\SV04D-APP\\Sistemas$\\Weslley\\Teste-Pratico\\Teste1\\Teste1.csproj",
+        "projectUniqueName": "C:\\Projetos\\Nova pasta\\AvaliacaoAnalista\\Teste1\\Teste1.csproj",
         "projectName": "Teste1",
-        "projectPath": "\\\\SV04D-APP\\Sistemas$\\Weslley\\Teste-Pratico\\Teste1\\Teste1.csproj",
-        "packagesPath": "C:\\Users\\w.bruno\\.nuget\\packages\\",
-        "outputPath": "\\\\SV04D-APP\\Sistemas$\\Weslley\\Teste-Pratico\\Teste1\\obj\\",
+        "projectPath": "C:\\Projetos\\Nova pasta\\AvaliacaoAnalista\\Teste1\\Teste1.csproj",
+        "packagesPath": "C:\\Users\\Gus\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Nova pasta\\AvaliacaoAnalista\\Teste1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\w.bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://brasilterminalportuario.pkgs.visualstudio.com/_packaging/Nugets_BTP/nuget/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
