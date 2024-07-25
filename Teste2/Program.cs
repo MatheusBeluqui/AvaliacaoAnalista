@@ -10,9 +10,61 @@ namespace Teste2
 {
     internal class Program
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            int quantidadeRepeticoes = 0; 
+            bool entradaValida = false;
+
+            while (!entradaValida)
+            {
+                Console.Write("Digite um número inteiro (1 a 19) para a sequência de Fibonacci: ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out quantidadeRepeticoes))
+                {
+                    if (quantidadeRepeticoes > 0 && quantidadeRepeticoes < 20)
+                    {
+                        entradaValida = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Número fora do intervalo válido (1 a 19). Tente novamente.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Por favor, digite um número inteiro válido.");
+                }
+            }
+
+            Console.WriteLine($"Sequência de Fibonacci com {quantidadeRepeticoes} números:");
+
+            int[] arrayFibonacci = GerarSequenciaFibonnacci(quantidadeRepeticoes);
+            foreach (int fibonacci in arrayFibonacci)
+            {
+                Console.Write(fibonacci + " ");
+            }
+
+            Console.WriteLine();
         }
+
+        static int[] GerarSequenciaFibonnacci(int quantidadeRepeticoes)
+        {
+            int[] fibonacci = new int[quantidadeRepeticoes];
+            if (quantidadeRepeticoes >= 1)
+            {
+                fibonacci[0] = 1;
+            }
+            if (quantidadeRepeticoes >= 2)
+            {
+                fibonacci[1] = 1;
+            }
+            for (int i = 2; i < quantidadeRepeticoes; i++)
+            {
+                fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+            }
+            return fibonacci;
+        }
+
     }
 }
