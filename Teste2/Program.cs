@@ -6,13 +6,15 @@
     Obs: A seguência de Fibonacci segue o padrão 1,1,2,3,5,8 e assim por diante, sendo o próximo número a soma do último número com o seu anterior.
 */
 
+using Teste2.InputHandler;
+
 namespace Teste2
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Boa sorte!");
+            Fibonacci.RequestInputHandler();
         }
     }
 }

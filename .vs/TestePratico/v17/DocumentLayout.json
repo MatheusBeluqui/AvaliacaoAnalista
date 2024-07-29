@@ -1,7 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\m.vinicius\\Dev\\Repo\\GitHubPessoal\\AvaliacaoAnalista\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|solutionrelative:teste2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste1\\inputhandler\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|solutionrelative:teste1\\inputhandler\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|solutionrelative:teste1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste2\\inputhandler\\fibonacci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|solutionrelative:teste2\\inputhandler\\fibonacci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste1\\constants\\consolemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|solutionrelative:teste1\\constants\\consolemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste2\\constants\\consolemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|solutionrelative:teste2\\constants\\consolemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|c:\\users\\lucas\\desktop\\projects\\avaliacaoanalista\\teste1\\constants\\regexpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|solutionrelative:teste1\\constants\\regexpattern.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,23 +38,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsoleMessage.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste2\\Constants\\ConsoleMessage.cs",
+              "RelativeDocumentMoniker": "Teste2\\Constants\\ConsoleMessage.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste2\\Constants\\ConsoleMessage.cs",
+              "RelativeToolTip": "Teste2\\Constants\\ConsoleMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:49:53.802Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fibonacci.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste2\\InputHandler\\Fibonacci.cs",
+              "RelativeDocumentMoniker": "Teste2\\InputHandler\\Fibonacci.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste2\\InputHandler\\Fibonacci.cs",
+              "RelativeToolTip": "Teste2\\InputHandler\\Fibonacci.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:49:30.542Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste2\\Program.cs",
+              "RelativeDocumentMoniker": "Teste2\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste2\\Program.cs",
+              "RelativeToolTip": "Teste2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:45:33.788Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\InputHandler\\User.cs",
+              "RelativeDocumentMoniker": "Teste1\\InputHandler\\User.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\InputHandler\\User.cs",
+              "RelativeToolTip": "Teste1\\InputHandler\\User.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:35:50.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsoleMessage.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\Constants\\ConsoleMessage.cs",
+              "RelativeDocumentMoniker": "Teste1\\Constants\\ConsoleMessage.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\Constants\\ConsoleMessage.cs",
+              "RelativeToolTip": "Teste1\\Constants\\ConsoleMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:20:52.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegexPattern.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\Constants\\RegexPattern.cs",
+              "RelativeDocumentMoniker": "Teste1\\Constants\\RegexPattern.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\Constants\\RegexPattern.cs",
+              "RelativeToolTip": "Teste1\\Constants\\RegexPattern.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T00:03:14.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\Program.cs",
+              "RelativeDocumentMoniker": "Teste1\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\projects\\AvaliacaoAnalista\\Teste1\\Program.cs",
+              "RelativeToolTip": "Teste1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T23:28:30.56Z",
+              "EditorCaption": ""
             }
           ]
         }

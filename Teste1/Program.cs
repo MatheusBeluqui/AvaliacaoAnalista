@@ -5,13 +5,16 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
+using Teste1.Constants;
+using Teste1.InputHandler;
+
 namespace Teste1
 {
-    internal class Program
+    internal partial class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Boa sorte!");
+            User.RequestInputHandler();
         }
     }
 }
