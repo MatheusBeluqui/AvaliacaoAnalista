@@ -1,6 +1,6 @@
 ﻿using Teste2.Constants;
 
-namespace Teste2.Entity
+namespace Teste2.InputHandler
 {
     internal static class Fibonacci
     {

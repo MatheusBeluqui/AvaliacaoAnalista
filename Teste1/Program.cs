@@ -6,7 +6,7 @@
  */
 
 using Teste1.Constants;
-using Teste1.Entity;
+using Teste1.InputHandler;
 
 namespace Teste1
 {
@@ -14,15 +14,7 @@ namespace Teste1
     {
         static void Main()
         {
-            Console.WriteLine(ConsoleMessage.TestTitle);
-
-            Console.WriteLine(ConsoleMessage.Obs);
-
-            var input = UserInput.RequestInput();
-            var result = UserInput.ReturnInputWithoutDuplicates(input);
-
-            Console.WriteLine(ConsoleMessage.OutputRequest);
-            Console.WriteLine(result.ToString());
+            User.RequestInputHandler();
         }
     }
 }

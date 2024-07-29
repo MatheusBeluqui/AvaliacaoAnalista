@@ -3,13 +3,17 @@ using System.Text.RegularExpressions;
 using Teste1.Constants;
 using Teste1.Helper;
 
-namespace Teste1.Entity
+namespace Teste1.InputHandler
 {
-    internal static partial class UserInput
+    internal static partial class User
     {
-        public static string RequestInput()
+        public static void RequestInputHandler()
         {
             string input;
+
+            Console.WriteLine(ConsoleMessage.TestTitle);
+
+            Console.WriteLine(ConsoleMessage.Obs);
 
             do
             {
@@ -17,10 +21,10 @@ namespace Teste1.Entity
                 input = Console.ReadLine()!;
             } while (string.IsNullOrEmpty(input) || MyRegex().IsMatch(input));
 
-            return input;
+            DistinctDuplicateValues(input);
         }
 
-        public static StringBuilder ReturnInputWithoutDuplicates(string input)
+        private static void DistinctDuplicateValues(string input)
         {
             HashSet<char> charsControl = [];
             StringBuilder result = new();
@@ -31,7 +35,17 @@ namespace Teste1.Entity
                 .Where(c => charsControl.Add(c))
                 .ToList();
 
-            return result.AppendJoin("", uniqueChars);
+            result.AppendJoin("", uniqueChars);
+
+            DisplayDistinctInputValue(result);
+        }
+
+        private static void DisplayDistinctInputValue(
+            StringBuilder result)
+        {
+            Console.WriteLine(ConsoleMessage.OutputRequest);
+
+            Console.WriteLine(result);
         }
 
         [GeneratedRegex(RegexPattern.SpacesPattern)]
