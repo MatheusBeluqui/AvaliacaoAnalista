@@ -9,9 +9,33 @@ namespace Teste1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Boa sorte!");
+            Console.WriteLine("Digite uma string alfanumérica:");
+            string input = Console.ReadLine();
+
+            string result = RemoveAdjacentDuplicates(input);
+
+            Console.WriteLine("Resultado: " + result);
+        }
+
+        static string RemoveAdjacentDuplicates(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            var cleanedString = "";
+            cleanedString += input[0];
+
+            for (int i = 1; i < input.Length; i++)
+            {
+                if (input[i] != input[i - 1])
+                {
+                    cleanedString += input[i];
+                }
+            }
+
+            return cleanedString;
         }
     }
 }
