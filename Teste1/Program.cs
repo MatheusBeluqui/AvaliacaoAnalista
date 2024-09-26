@@ -5,13 +5,25 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
+using System.Text.RegularExpressions;
+
 namespace Teste1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            IniciarInterfaceInterativa();
+        }
+
+        private static void IniciarInterfaceInterativa()
+        {
+            Console.WriteLine($"Digite uma string alfanumérica: ");
+
+            string? entrada = Console.ReadLine();
+
+            if (!string.IsNullOrEmpty(entrada))
+                Console.WriteLine(Regex.Replace(entrada, @"(.)\1+", "$1"));
         }
     }
 }
