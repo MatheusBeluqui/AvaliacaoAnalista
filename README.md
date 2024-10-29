@@ -32,9 +32,7 @@ As principais camadas são apresentação (Frontend), aplicação (Backend), dad
 
 **Resposta:**
 
-SOA (Service-Oriented Architecture): Enfatiza a reusabilidade, com serviços muitas vezes interdependentes e utilizando um barramento (ESB) para comunicação entre eles. É mais monolítica em termos de dependência entre serviços.
-
-Microserviços: Cada serviço é independente e encapsula uma função específica. São mais leves e autônomos, permitindo uma escalabilidade independente e comunicação entre serviços normalmente por APIs REST ou gRPC. É uma abordagem mais ágil e de menor acoplamento que SOA.
+SOA (Arquitetura Orientada a Serviços) é uma abordagem monolítica, com serviços interdependentes que se comunicam via um barramento. Já a arquitetura de Microserviços promove independência total entre serviços leves, cada um encapsulando uma função específica, com comunicação por APIs REST ou gRPC, permitindo escalabilidade e agilidade com menor acoplamento em relação ao SOA.
 
 
 4. Qual é o objetivo de um API Management na arquitetura de serviços distribuídos? Cite vantagens e desvantagens.
@@ -80,10 +78,14 @@ Em uma SPA, o gerenciamento de rotas permite navegar entre páginas sem recarreg
 
 **Resposta:**
 
+DevOps é uma cultura que integra desenvolvimento e operações para entregar software mais rápido e com qualidade. Envolve práticas de CI/CD, automação de testes e monitoramento, possibilitando uma entrega contínua e confiável.
+
 
 10. Explique sobre um método agile.
 
 **Resposta:**
+
+O método ágil é uma abordagem de gerenciamento de projetos que enfatiza a flexibilidade, colaboração e entrega incremental. Em vez de seguir um planejamento rígido, as equipes ágeis trabalham em ciclos curtos, permitindo adaptação rápida às mudanças e foco nas necessidades do cliente.
 
 
 11. Comente sobre CI e CD e algumas ferramentas do dia a dia.
@@ -111,11 +113,14 @@ O Kubernetes é uma plataforma de orquestração de containers open-source e mui
 
 **Resposta:**
 
+O uso de APIs traz flexibilidade, reusabilidade e facilita a integração com outros sistemas. No entanto, exige segurança extra, políticas de versionamento e uma infraestrutura confiável, podendo enfrentar problemas de latência. As principais preocupações são segurança (autenticação e autorização), gestão de versão e documentação clara.
+
 
 15. Como conseguimos garantir um nível de segurança satisfatório no uso de APIS?
 
 **Resposta:**
 
+Recomendo sempre implementar autenticação (OAuth, JWT), usar HTTPS para proteger dados em trânsito, aplicar rate limiting e monitoramento e configurar CORS adequadamente.
 
 16. Para que serve uma arquitetura de mensagerias?
 
@@ -128,7 +133,11 @@ Uma arquitetura de mensageria permite que os serviços se comuniquem de forma as
 
 **Resposta:**
 
+Saga é uma estratégia para garantir consistência de dados em transações distribuídas entre microserviços. Cada serviço executa uma transação local e emite um evento para o próximo passo. Se algo falhar, cada serviço executa ações de compensação para desfazer as transações.
+
 
 18. Descreva o seu entendimento sobre GitOps utilizando Kubernetes.
 
 **Resposta:**
+
+GitOps é uma prática de gerenciar a infraestrutura e as aplicações de um ambiente Kubernetes usando Git como única fonte de verdade. Com GitOps, as mudanças são aplicadas automaticamente ao cluster Kubernetes assim que o código é atualizado, garantindo uma consistência e um histórico completo de alterações.
