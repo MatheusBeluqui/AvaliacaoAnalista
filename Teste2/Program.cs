@@ -6,7 +6,6 @@
     Obs: A seguência de Fibonacci segue o padrão 1,1,2,3,5,8 e assim por diante, sendo o próximo número a soma do último número com o seu anterior.
 */
 
-using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Teste2
