@@ -12,7 +12,37 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            int number;
+
+            while (true)
+            {
+                Console.Write("Digite um número inteiro positivo entre 1 e 19: ");
+                string? input = Console.ReadLine();
+
+                if (int.TryParse(input, out number) && number > 0 && number < 20)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Entrada inválida. Por favor, tente novamente.");
+                }
+            }
+
+            Console.WriteLine($"Sequência de Fibonacci com {number} termos:");
+
+            for (int i = 0; i < number; i++)
+                Console.Write(Fibonacci(i) + " ");
+
+            Console.WriteLine();
+        }
+
+        static int Fibonacci(int n)
+        {
+            if (n <= 1)
+                return n;
+
+            return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
     }
 }
