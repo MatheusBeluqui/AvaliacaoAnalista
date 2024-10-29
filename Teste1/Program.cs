@@ -6,6 +6,7 @@
  */
 
 using System;
+using System.Text.RegularExpressions;
 
 namespace Teste1
 {
@@ -16,9 +17,9 @@ namespace Teste1
             Console.WriteLine("Digite uma string alfanumérica:");
             string input = Console.ReadLine();
 
-            if (string.IsNullOrEmpty(input))
+            if (string.IsNullOrEmpty(input) || !EhAlfanumerico(input))
             {
-                Console.WriteLine("Entrada inválida.");
+                Console.WriteLine("Entrada inválida. A string deve ser alfanumérica.");
                 return;
             }
 
@@ -27,6 +28,13 @@ namespace Teste1
             Console.ReadKey();
         }
 
+        // Verifica se a string é alfanumérica
+        static bool EhAlfanumerico(string input)
+        {
+            return Regex.IsMatch(input, @"^[a-zA-Z0-9]+$");
+        }
+
+        // Remove caracteres duplicados consecutivos
         static string RemoverDuplicatasConsecutivas(string input)
         {
             if (input.Length < 2)
@@ -48,3 +56,4 @@ namespace Teste1
         }
     }
 }
+
