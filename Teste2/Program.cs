@@ -62,19 +62,19 @@ namespace Teste2
         private static string Fibonacci(int number)
         {
             StringBuilder result = new StringBuilder();
-            int a = 0;
-            int b = 1;
+            int initial = 0;
+            int value = 1;
 
             for (int i = 0; i < number; i++)
             {
-                result.Append(a);
+                result.Append(initial);
                 if (i < number - 1)
                 {
                     result.Append(",");
                 }
-                int temp = a;
-                a = b;
-                b = temp + b;
+                int temp = initial;
+                initial = value;
+                value = temp + value;
             }
             return result.ToString();
         }
