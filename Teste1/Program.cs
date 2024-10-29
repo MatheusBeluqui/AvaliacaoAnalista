@@ -57,15 +57,17 @@ namespace Teste1
         private static string RemoveDuplicates(string input)
         {
             StringBuilder result = new StringBuilder();
-            char lastChar = input[0];
+            char lastChar = char.ToUpperInvariant(input[0]);
             result.Append(lastChar);
 
             for (int i = 1; i < input.Length; i++)
             {
-                if (input[i] != lastChar)
+                char currentChar = char.ToUpperInvariant(input[i]);
+
+                if (currentChar != lastChar)
                 {
-                    result.Append(input[i]);
-                    lastChar = input[i];
+                    result.Append(currentChar);
+                    lastChar = currentChar;
                 }
             }
 
