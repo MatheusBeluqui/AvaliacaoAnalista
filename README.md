@@ -67,7 +67,7 @@ Por mais que parecidas, as classes e as structs tem algumas diferenças importan
 
 O .NET Framework é uma plataforma de desenvolvimento de software da Microsoft que suporta a criação e execução de aplicativos Windows, Web e Mobile. Ele é uma plataforma madura e amplamente utilizada, mas tem algumas limitações, como a dependência do Windows e a falta de suporte para contêineres e sistemas operacionais não-Windows.
 
-Em contra
+Em contrapartida o .NET Core é uma versão mais leve e modular do .NET Framework que suporta a criação e execução de aplicativos multiplataforma, não obrigatóriamente requerendo Windows e podendo ser utilizado em sistemas Linux e macOS. Ele é mais rápido, mais leve e mais flexível do que o .NET Framework, e é amplamente utilizado para o desenvolvimento de aplicativos modernos e escaláveis.
 
 7. Quais as principais diferenças entre REST e GRPC?
 
