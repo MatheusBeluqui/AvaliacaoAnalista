@@ -19,7 +19,7 @@ namespace Teste1
             {
                 Console.WriteLine("Digite uma string alfanumérica:");
                 entrada = Console.ReadLine()!; //null-forgiving
-            } while (string.IsNullOrEmpty(entrada));
+            } while (string.IsNullOrEmpty(entrada) || !entrada.All(char.IsLetterOrDigit));
 
             Console.Clear();
 

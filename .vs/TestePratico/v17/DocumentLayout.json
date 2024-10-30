@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\source\\AvaliacaoAnalista\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|c:\\source\\avaliacaoanalista\\teste2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|solutionrelative:teste2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|c:\\source\\avaliacaoanalista\\teste1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E45E0A6D-0DDE-44B2-930B-C4646371E2BC}|Teste1\\Teste1.csproj|solutionrelative:teste1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|c:\\source\\avaliacaoanalista\\teste2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC512FA-BEA3-41DD-82A4-8AD615E03570}|Teste2\\Teste2.csproj|solutionrelative:teste2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\source\\AvaliacaoAnalista\\Teste2\\Program.cs",
               "RelativeDocumentMoniker": "Teste2\\Program.cs",
@@ -43,13 +43,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\source\\AvaliacaoAnalista\\Teste1\\Program.cs",
               "RelativeDocumentMoniker": "Teste1\\Program.cs",
               "ToolTip": "C:\\source\\AvaliacaoAnalista\\Teste1\\Program.cs",
               "RelativeToolTip": "Teste1\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T03:34:36.767Z",
               "EditorCaption": ""
