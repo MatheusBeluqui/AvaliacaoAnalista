@@ -11,7 +11,31 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+
+            Console.WriteLine("Digite uma palavra qualquer: ");
+            string input = Console.ReadLine();
+
+
+            input = RemoveDuplicidade(input);
+
+            Console.WriteLine(input);
+        }
+
+        private static string RemoveDuplicidade(string input)
+        {
+            if (string.IsNullOrEmpty(input) || input.Length == 1)
+                return input;
+
+            int i = 0;
+            string ninput = input[i].ToString();
+
+            for (i = 1; i < input.Length; i++)
+            {
+                if (input[i - 1] != input[i])
+                    ninput += input[i];
+            }
+
+            return ninput;
         }
     }
 }
