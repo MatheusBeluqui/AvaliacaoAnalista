@@ -12,7 +12,52 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.WriteLine("Digite um número qualquer: ");
+            string input = Console.ReadLine();
+
+
+            bool isValid = IsNumberValid(input);
+
+            if (isValid)
+                Console.WriteLine("número valido");
+
+            Console.WriteLine(GetFibonacciSequence(10));
+        }
+
+        private static bool IsNumberValid(string input)
+        {
+            bool isInteger = int.TryParse(input, out int nvalid);
+
+            //valida um número inteiro
+            if (!isInteger)
+            {
+                Console.WriteLine($"Numero Invalido. Numero informado não é inteiro");
+                return false;
+            }
+
+            if (nvalid <= 0 || nvalid > 20)
+            {
+                Console.WriteLine($"Numero invalido. Negativo ou maior que 20.");
+                return false;
+            }
+
+            return true;
+        }
+
+        private static string GetFibonacciSequence(int count)
+        {
+
+            int[] fibonacciNumbers = new int[count];
+
+            fibonacciNumbers[0] = 1;
+            if (count > 1) fibonacciNumbers[1] = 1;
+
+            for (int i = 2; i < count; i++)
+            {
+                fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
+            }
+
+            return string.Join(", ", fibonacciNumbers);
         }
     }
 }
