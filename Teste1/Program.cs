@@ -11,7 +11,15 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+
+            Console.WriteLine("Entre com uma string: ");
+
+            string input = Console.ReadLine();
+
+            string result = Processador.RemoveCharacteresDuplicados(input);
+
+            Console.WriteLine($"Resultado: {result}");
+
         }
     }
 }
