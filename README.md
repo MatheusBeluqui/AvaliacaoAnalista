@@ -49,7 +49,7 @@ Não conheço a definição teórica de SOA, mas sempre achei ambos muito iguais
 **Resposta:**
 
 A API Management é responsável por administrar e gerenciar o acesso das APIS, exatamente para ter um controle maior, principalmente do acesso a API e troca de informações entre o que vai consumir essa API e a API em si, além de fazer controle de acesso, além de centralizar o ponto de entrada de chamada da API.
-Uma das vantagens é exatamente ter um controle de acesso, não deixando qualquer um que tenha um postman da vida, consiga acessar facilmente a api, ou até mesmo pelo Swagger da aplicação. Além de centralizar o ponto de entrada, qualquer um front, por exemplo, pode ser acoplado a aplicação, chamando a api só pra consumir os dados, sem precisar mudar as regras de negócio, facilitando a integração.
+Uma das vantagens é exatamente ter um controle de acesso, dificultando acesso de forma pública, consiga acessar facilmente a api, ou até mesmo pelo Swagger da aplicação. Além de centralizar o ponto de entrada, qualquer um front, por exemplo, pode ser acoplado a aplicação, chamando a api só pra consumir os dados, sem precisar mudar as regras de negócio, facilitando a integração.
 Uma das desvantagens, é que dependendo do servidor, pode gerar problemas de latência, as requisições demorando mais a retornar devido ao servidor, gerando até timeout em requisições que demoram demais, gerando até lentidão no uso do front, já que espera a requisição retornar. Também se é usada api de terceiros, você acaba ficando limitado ao que eles te disponibilizam, como por exemplo a api do google maps, que depois que passou a ser paga, as aplicações que usavam de forma gratuita, pararam.
 
 
@@ -58,7 +58,7 @@ Uma das desvantagens, é que dependendo do servidor, pode gerar problemas de lat
 
 **Resposta:**
 
-Basicamente o Struct tem os dados acessados diretamente, já a class é mais um apontamento de referência (Famoso ponteiro, em C). o Struct costuma ser usado pra coisa mais imutáveis e classe são estruturas mais complexas, podendo serem setados valores, gerando mutabilidade.
+Basicamente o Struct tem os dados acessados diretamente, já a class é mais um apontamento de referência. o Struct costuma ser usado pra coisa mais imutáveis e classe são estruturas mais complexas, podendo serem setados valores, gerando mutabilidade.
 
 
 6. Explique a grande diferença entre .NET e .NET CORE.
