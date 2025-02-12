@@ -102,7 +102,7 @@ O Scrum eu já trabalho faz muitos anos, é gigantesco, acho difícil algum proj
 
 **Resposta:**
 
-Não sei definir de fato ambos, mas sei que são ferramentas que ajudam, aceleram e deixam de forma mais seguras, toda a parte de entrega de valor pro cliente, criando pipelinas com todo o build do ambiente, gerando build da aplicação e rodando testes unitário e automáticos, além de fazer deploy nos ambientes setados, facilitando tanto a entrega quanto o próprio desenvolvimento, pois caso a pipeline quebre, já fica de fácil acesso prodev descobrir em qual processo quebrou, alóem de entregar valor pro cliente de forma totalmente automatizada. Infelizmente só tive experiência com o Jenkins.
+Não sei definir de fato ambos, mas sei que são ferramentas que ajudam, aceleram e deixam de forma mais seguras, toda a parte de entrega de valor pro cliente, criando pipeline com todo o build do ambiente, gerando build da aplicação e rodando testes unitário e automáticos, além de fazer deploy nos ambientes setados, facilitando tanto a entrega quanto o próprio desenvolvimento, pois caso a pipeline quebre, já fica de fácil acesso prodev descobrir em qual processo quebrou, alóem de entregar valor pro cliente de forma totalmente automatizada. Infelizmente só tive experiência com o Jenkins.
 
 
 12. Qual a diferença entre Docker e Containers.
@@ -152,4 +152,4 @@ Não conheço a estratégia SAGA, eu poderia procurar no google e dar uma respos
 
 **Resposta:**
 
-O Kubernetes executa e administra dentro dele de acordo com o que GitOps configura e define, para criar automatizações de papiline que funcione automaticamente a partir dos commits feitos no repositório, gerando ambiente na ordem certa, criando dependências na ordem certa, compilando e rodando na ordem certa etc.
+O Kubernetes executa e administra dentro dele de acordo com o que GitOps configura e define, para criar automatizações de pipeline que funcione automaticamente a partir dos commits feitos no repositório, gerando ambiente na ordem certa, criando dependências na ordem certa, compilando e rodando na ordem certa etc.
