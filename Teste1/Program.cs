@@ -11,7 +11,18 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Digite uma string alfanumérica: ");
+            string input = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                Console.WriteLine("Entrada inválida. Tente novamente.");
+                return;
+            }
+
+            StringProcessor processor = new StringProcessor();
+            string result = processor.RemoveDuplicadosConsecutivos(input);
+            Console.WriteLine($"Resultado: {result}");
         }
     }
 }
