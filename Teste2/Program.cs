@@ -12,7 +12,17 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Digite um número inteiro entre 1 e 19: ");
+            if (!int.TryParse(Console.ReadLine(), out int n) || n <= 0 || n >= 20)
+            {
+                Console.WriteLine("Entrada inválida! Digite um número inteiro positivo entre 1 e 19.");
+                return;
+            }
+
+            FibonacciService fibonacciService = new FibonacciService();
+            List<int> fibonacciSequence = fibonacciService.GerarFibonacci(n);
+
+            Console.WriteLine($"Sequência de Fibonacci ({n} termos): {string.Join(", ", fibonacciSequence)}");
         }
     }
 }
