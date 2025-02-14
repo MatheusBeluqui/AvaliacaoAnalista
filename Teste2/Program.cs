@@ -12,7 +12,65 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Digite um número inteiro entre 1 e 19: ");
+            var textoNumero = Console.ReadLine();
+
+            if (!ValidarNumero(textoNumero)) return;
+
+            var numero = Convert.ToInt32(textoNumero);
+            var sequenciaFibonacci = GerarSequenciaFibonacci(numero);
+
+            Console.WriteLine(string.Join(", ", sequenciaFibonacci));
+        }
+
+        private static bool ValidarNumero(string? textoNumero)
+        {
+            if (string.IsNullOrEmpty(textoNumero))
+            {
+                Console.WriteLine("O número não pode estar em branco.");
+                return false;
+            }
+
+            int numero;
+            if (!int.TryParse(textoNumero, out numero))
+            {
+                Console.WriteLine("O número precisa ser um inteiro.");
+                return false;
+            }
+
+            if (numero <= 0)
+            {
+                Console.WriteLine("O número precisa ser maior do que 0.");
+                return false;
+            }
+
+            if (numero >= 20)
+            {
+                Console.WriteLine("O número precisa ser menor do que 20.");
+                return false;
+            }
+
+            return true;
+        }
+
+        private static List<int> GerarSequenciaFibonacci(int quantidade)
+        {
+            var sequenciaFibonacci = new List<int>();
+
+            var primeiro = 1;
+            var segundo = 1;
+
+            for (int i = 0; i < quantidade; i++)
+            {
+                sequenciaFibonacci.Add(primeiro);
+
+                var proximo = primeiro + segundo;
+
+                primeiro = segundo;
+                segundo = proximo;
+            }
+
+            return sequenciaFibonacci;
         }
     }
 }
