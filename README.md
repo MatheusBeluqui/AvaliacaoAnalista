@@ -31,7 +31,7 @@ A principal diferença entre esses estilos de arquitetura é basicamente a prese
 4. Qual é o objetivo de um API Management na arquitetura de serviços distribuídos? Cite vantagens e desvantagens.
 
 **Resposta:** <br>
-O objetivo de utilizar um API management é centralizar o ponto de acesso aos serviços nesse tipo de arquitetura, facilitando uma exposição mais segura e eficiente das APIs. Algumas vantagens são a segurança, monitoramento das requisições e escalabilidade. Possíveis desvantagens são um aumento na latência do acesso às APIs e a possibilidade de ocasionar indisponibilidade das APIs em caso de falha do API management. 
+O objetivo de utilizar um API management é centralizar o ponto de acesso aos serviços nesse tipo de arquitetura, facilitando uma exposição mais segura e eficiente das APIs. Algumas vantagens são a segurança, monitoramento das requisições e escalabilidade. Possíveis desvantagens são um aumento na latência do acesso às APIs e a possibilidade de ocasionar indisponibilidade das APIs em caso de falha do API management. Um exemplo de serviço que já utilizei é o API Gateway da AWS, servindo de ponto de entrada para as aplicações na infraestrutura.
 
 5. Qual a diferença entre uma Struct e uma Class?
 
@@ -56,18 +56,18 @@ O roteamento de uma SPA funciona basicamente renderizando diferentes componentes
 9. Falando sobre DevOps, comente o que conhece sobre.
 
 **Resposta:** <br>
-Devops é uma cultura e geralmente é empregada como “time” ou cargo em empresas, visando a otimização e bom funcionamento da infraestrutura das aplicações. No geral, pessoas com uma visão mais voltada para essa área tem conhecimento em serviços na cloud, tem domínio sobre arquitetura, sobre como disponibilizar aplicações e recursos como bancos de dados e servidores, além de focarem em melhorias nos fluxos de disponibilização das aplicações, como CI/CD.
+Devops é uma cultura e geralmente é empregada como “time” ou cargo em empresas, visando a otimização e bom funcionamento da infraestrutura das aplicações. No geral, pessoas com uma visão mais voltada para essa área tem conhecimento em serviços na cloud, tem domínio sobre arquitetura, sobre como disponibilizar aplicações e recursos como bancos de dados e servidores, além de focarem em melhorias nos fluxos de disponibilização das aplicações, como CI/CD. Recentemente tirei minha certificação Cloud Practioner da AWS e foi bastante interessante aprender mais de parte desse tópico, conhecendo diversas ferramentas e práticas facilitam manter aplicações, como redução de custos e boa utilização de recursos na arquitetura, assim como a facilidade de provisionamento/replicação da mesma com o Cloud Formation.
 
 10. Explique sobre um método agile.
 
 **Resposta:** <br>
-Um método ágil bastante utilizado para o desenvolvimento de software é o Scrum, consistindo basicamente em um framework que define “ciclos” de trabalho, chamados de sprints, que podem ter um tamanho váriavel a depender da necessidade do time. Nessas sprint são definidas as tarefas a serem realizadas, partindo de um backlog geral. Nessa metodologia é comum ter algumas cerimônias, como planning, daily e retrospectiva.
+Um método ágil bastante utilizado para o desenvolvimento de software é o Scrum, consistindo basicamente em um framework que define “ciclos” de trabalho, chamados de sprints, que podem ter um tamanho váriavel a depender da necessidade do time. Nessas sprint são definidas as tarefas a serem realizadas, partindo de um backlog geral. Nessa metodologia é comum ter algumas cerimônias, como planning, daily e retrospectiva. Utilizei bastante em equipes de desenvolvimento de um SAAS, onde essas interações eram bastante vantajosas, utilizando também um quadro Kanban no Jira como base para o fluxo da sprint.
 
 11. Comente sobre CI e CD e algumas ferramentas do dia a dia.
 
 **Resposta:** <br>
 O CI é uma prática que visa otimizar o processo da integração de mudanças na base de código, ou seja, formas de facilitar e aumentar a frequência em que o código é disponibilizado no repositório. Um exemplo disso seria uma validação com um linter ou ferramenta de análise de código e execução de testes automática ao subir código. CD seria a prática de facilitar a disponibilização da aplicação em produção, como por exemplo, depois da etapa de CI e tudo estiver certo, um merge na branch main pode disparar um deploy automático dessa release em produção. 
-Uma ferramenta bastante utilizada para pipelines de CI/CD é o Github Actions.
+Uma ferramenta bastante utilizada para pipelines de CI/CD que tenho experiência é o Github Actions. Usei para rodar a suíte testes e validar formatação do código, assim como para deploy automatizado ao realizar o merge na branch main.
 
 12. Qual a diferença entre Docker e Containers.
 
@@ -87,19 +87,19 @@ Uma grande vantagem para utilização de APIs é a facilitação de comunicaçã
 15. Como conseguimos garantir um nível de segurança satisfatório no uso de APIS?
 
 **Resposta:** <br>
-Boas práticas no que diz respeito à segurança de API estão distribuídas em algumas camadas, como validação, para certificar que os dados recebidos não são nocivos, autenticação, para verificar a identidade do usuário, autorização, para garantir que o acesso ao recurso está sendo realizado por quem tem permissão. Além disso, a utilização de rate limit, podendo ser aplicado a nível de infra ou a nível de aplicação, com a intenção de mitigar potenciais ataques DDoS.
+Boas práticas no que diz respeito à segurança de API estão distribuídas em algumas camadas, como validação, para certificar que os dados recebidos não são nocivos, autenticação, para verificar a identidade do usuário, autorização, para garantir que o acesso ao recurso está sendo realizado por quem tem permissão. Além disso, a utilização de rate limit, podendo ser aplicado a nível de infra ou a nível de aplicação, com a intenção de mitigar potenciais ataques DDoS. Já participei em um projeto com alto volume de acessos, precisando ter uma boa política de rate limit, além de bastante criticidade em relação a autorização, por meio da utilização de roles e módulos, devido a sensibilidade com o ecossistema de pagamentos.
 
 16. Para que serve uma arquitetura de mensagerias?
 
 **Resposta:** <br>
-Essa arquitetura serve para que a comunição entre aplicações/serviços ocorra de forma assíncrona, sendo bastante vantajosa nos aspectos de desacoplamento e escalabilidade.
+Essa arquitetura serve para que a comunição entre aplicações/serviços ocorra de forma assíncrona, sendo bastante vantajosa nos aspectos de desacoplamento e escalabilidade. Utilizei bastante o serviço da AWS, o SQS, para desempenhar o serviço de filas, com múltiplas finalidades como envio de e-mails, processamento de solicitações à serviços externos, entre outros, todos impactantes para a experiência do usuário final, principalmente no que diz respeito a estabilidade e tempo de resposta.
 
 17. Explique a estratégia SAGA em arquitetura de microservice.
 
 **Resposta:** <br>
-Apesar microsserviços serem isolados e indepentes, muitas vezes um fluxo no sistema depende de vários microsserviços. Com isso, a estratégia SAGA vem para garantir que os processos executados em cada microsserviço deixem o fluxo consistente, ou seja, em caso de erro em algum serviço, o padrão define que deverá ocorrer processo compensatório para reverter as operações anteriores no fluxo.
+Apesar de microsserviços serem isolados e independentes, muitas vezes um fluxo no sistema depende de vários microsserviços. Com isso, a estratégia SAGA vem para garantir que os processos executados em cada microsserviço deixem o fluxo consistente, ou seja, em caso de erro em algum serviço, o padrão define que deverá ocorrer processo compensatório para reverter as operações anteriores no fluxo.
 
 18. Descreva o seu entendimento sobre GitOps utilizando Kubernetes.
 
 **Resposta:** <br>
-Não tenho conhecimento na nessa abordagem utilizando Kubernetes.
+Não tenho conhecimento nessa abordagem utilizando Kubernetes.
