@@ -11,7 +11,59 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Digite um texto alfanumérico: ");
+            var texto = Console.ReadLine();
+
+            if (!ValidarTexto(texto)) return;
+
+            var textoSemDuplicadosProximos = RemoverDuplicadosProximos(texto);
+
+            Console.WriteLine("Resultado: " + textoSemDuplicadosProximos);
+        }
+
+        private static bool ValidarTexto(string? texto)
+        {
+            if (string.IsNullOrEmpty(texto))
+            {
+                Console.WriteLine("O texto não pode estar em branco.");
+                return false;
+            }
+
+            if (!SomenteAlfaNumerico(texto))
+            {
+                Console.WriteLine("O texto precisa ser alfanumérico");
+                return false;
+            }
+
+            return true;
+        }
+
+        static bool SomenteAlfaNumerico(string texto)
+        {
+            foreach (var caracter in texto)
+            {
+                if (!char.IsLetterOrDigit(caracter))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        static string RemoverDuplicadosProximos(string texto)
+        {
+            var novoTexto = string.Empty;
+
+            for (var i = 0; i < texto.Length; i++)
+            {
+                if (i == 0 || texto[i] != texto[i - 1])
+                {
+                    novoTexto += texto[i];
+                }
+            }
+
+            return novoTexto;
         }
     }
 }
