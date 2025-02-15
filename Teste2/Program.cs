@@ -8,11 +8,51 @@
 
 namespace Teste2
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            var input = string.Empty;
+            do
+            {
+
+                Console.Write("Digite um numero entre 1 e 19: ");
+                input = Console.ReadLine();
+            }
+            while (!isValidInput(input));
+
+            Console.WriteLine($"Resultado: {calcFibonnaci(Convert.ToInt32(input))}");
+        }
+
+
+        private static int calcFibonnaci(int n)
+        {
+            if (n == 1 || n == 2) return 1;
+
+            return calcFibonnaci(n - 1) + calcFibonnaci(n - 2);
+        }
+
+        private static bool isValidInput(string input)
+        {
+            if (!int.TryParse(input, out int numero))
+            {
+                Console.WriteLine("A entrada deve ser um numero inteiro");
+                return false;
+            }
+
+            if (numero <= 0)
+            {
+                Console.WriteLine("O número deve ser maior do que 0");
+                return false;
+            }
+
+            if (numero >= 20)
+            {
+                Console.WriteLine("O número deve ser menor do que 20");
+                return false;
+            }
+
+            return true;
         }
     }
 }
