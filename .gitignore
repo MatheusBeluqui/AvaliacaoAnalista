@@ -1,0 +1,13 @@
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+**/bin/
+**/obj/
+*.nuspec
+*.nupkg
+*.snupkg
+*.psmdcp
