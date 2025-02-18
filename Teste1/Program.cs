@@ -11,7 +11,30 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Digite uma string alfanumérica: ");
+
+            Console.WriteLine($"Resultado: {RemoveDuplicata(Console.ReadLine())}");
+        }
+
+        static string RemoveDuplicata(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+
+            char[] resultado = new char[input.Length];
+            int index = 0;
+
+            resultado[index++] = input[0];
+
+            for (int i = 1; i < input.Length; i++)
+            {
+                if (input[i] != input[i - 1])
+                {
+                    resultado[index++] = input[i];
+                }
+            }
+
+            return new string(resultado);
         }
     }
 }
