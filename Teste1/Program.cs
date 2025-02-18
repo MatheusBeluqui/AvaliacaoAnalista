@@ -5,13 +5,29 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
+using Helper;
+
 namespace Teste1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            while (true)
+            {
+                Console.Write(CustomMessage.MSG0001);
+                var input = Console.ReadLine();
+
+                if (input.IsAlphanumericText())
+                {
+                    var result = input.RemoveConsecutiveDuplicates();
+
+                    Console.WriteLine($"Resultado: {result}");
+                    break;
+                }
+                else
+                    Console.WriteLine(CustomMessage.MSG0002);
+            }
         }
     }
 }
