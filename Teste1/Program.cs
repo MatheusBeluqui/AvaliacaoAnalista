@@ -5,13 +5,46 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
+using System.Text.RegularExpressions;
+
 namespace Teste1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            var input = GetUserInput();
+            var returnValue = string.Empty;
+
+            HashSet<char> charSet = [.. input];
+
+            foreach (char c in charSet) 
+            {
+                returnValue += c;
+            }
+
+            Console.WriteLine(returnValue);
+        }
+
+        static string GetUserInput()
+        {
+            bool validInput = false;
+            string input = string.Empty;
+
+            while (!validInput)
+            {
+                Console.WriteLine("Por favor digite uma string alfanúmerica.");
+                input = Console.ReadLine()!;
+                validInput = IsAlphaNumeric(input);
+            }
+
+            return input;
+        }
+
+        static bool IsAlphaNumeric(string input)
+        {
+            Regex rg = new(@"^[a-zA-Z0-9]+$");
+            return rg.IsMatch(input);
         }
     }
 }
