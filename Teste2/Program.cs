@@ -12,7 +12,52 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            var input = GetUserInput();
+            GenerateFibonacci(input);
+        }
+
+        static int GetUserInput()
+        {
+            bool validInput = false;
+            string input = string.Empty;
+
+            while (!validInput)
+            {
+                Console.WriteLine("Por favor digite um número entre 1 e 19:");
+                input = Console.ReadLine()!;
+                validInput = IsAValidNumber(input);
+            }
+
+            return int.Parse(input);
+        }
+
+        static bool IsAValidNumber(string input)
+        {           
+            var isNumber = int.TryParse(input, out var parsedNumber);
+            if(!isNumber)
+                return false;
+
+            if (parsedNumber <= 0 || parsedNumber >= 20)
+                return false;
+
+            return true;
+        }
+
+        static void GenerateFibonacci(int input)
+        {
+            var returnValue = string.Empty;
+
+            int num1 = 0;
+            int num2 = 1;
+            for (int i = 0; i < input; i++)
+            {
+                returnValue += $"{num2},";
+                int temp = num1;
+                num1 = num2;
+                num2 += temp;
+            }
+
+            Console.WriteLine(returnValue);
         }
     }
 }
