@@ -92,3 +92,9 @@
 18. Descreva o seu entendimento sobre GitOps utilizando Kubernetes.
 
 **Resposta:**
+
+
+19. Descreva detalhadamente algum case de sucesso em que você atuou diretamente no desenvolvimento para solução de algum problema, cite tecnologias e os desafios enfrentados.
+ 
+**Resposta:**
+ 
