@@ -149,3 +149,19 @@ SAGA Orquestrada, com um orquestrador central controlando o fluxo, ou SAGA Coreo
 **Resposta:**
 GitOps usa o Git para gerenciar e automatizar o Kubernetes, sincronizando o cluster com o estado definido no repositório, garantindo consistência 
 e facilidade de rollback.
+=======
+
+19. Descreva detalhadamente algum case de sucesso em que você atuou diretamente no desenvolvimento para solução de algum problema, cite tecnologias e os desafios enfrentados.
+
+**Resposta:**
+No último projeto em que atuei na empresa Negócios Públicos, desenvolvi um sistema habitacional que incluía a funcionalidade de mapeamento de áreas 
+integrado ao Google Maps. Inicialmente, para gerar essas áreas, o usuário precisava inserir manualmente cada coordenada, o que tornava o processo 
+lento e complexo. Diante disso, a diretoria da empresa solicitou uma integração com o Google Earth, que gera um documento APK ao criar uma área. 
+Ao consultar o tech lead sobre a viabilidade dessa demanda ou se já existia algum procedimento que realizasse essa tarefa, ele informou que não era 
+possível atender à solicitação. No entanto, após uma análise detalhada, percebi que era possível fazer a leitura do documento APK usando TypeScript, 
+percorrendo a string do arquivo para extrair as coordenadas necessárias. Com isso, consegui implementar a funcionalidade de leitura do APK, permitindo 
+a geração da área com apenas dois cliques, simplificando significativamente o processo para o usuário.
+No mesmo projeto, identifiquei a necessidade de refatoração e apresentei um plano de ação para tornar o código mais limpo e de fácil compreensão. Após
+ a aprovação, apliquei meus conhecimentos em princípios como SOLID, DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid), o que resultou em uma
+ API mais eficiente, rápida e de manutenção simplificada. Essa abordagem não apenas melhorou a qualidade do código, mas também facilitou futuras 
+implementações e ajustes, garantindo um sistema mais robusto e escalável.
