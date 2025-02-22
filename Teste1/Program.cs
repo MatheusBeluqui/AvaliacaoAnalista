@@ -5,13 +5,34 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
-namespace Teste1
+using System.Text;
+
+Console.WriteLine("Boa sorte!");
+
+Console.Write("Digite uma string alfanumérica: ");
+string input = Console.ReadLine();
+
+if (string.IsNullOrEmpty(input))
 {
-    internal class Program
+    Console.WriteLine("Necessário digitar algum valor para o funcionamento correto");
+    return;
+}
+
+string result = ExcluiDuplicados(input);
+Console.WriteLine($"Retorno: {result}");
+
+string ExcluiDuplicados(string input)
+{
+    var result = new StringBuilder();
+    result.Append(input[0]);
+
+    for (int i = 1; i < input.Length; i++)
     {
-        static void Main(string[] args)
+        if (input[i] != input[i - 1])
         {
-            Console.WriteLine("Boa sorte!");
+            result.Append(input[i]);
         }
     }
+
+    return result.ToString();
 }

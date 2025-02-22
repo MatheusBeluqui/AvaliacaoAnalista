@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.vinicius\\Dev\\Repo\\GitHubPessoal\\AvaliacaoAnalista\\Teste1\\Teste1.csproj": {}
+    "E:\\GitHub\\AvaliacaoAnalista\\Teste1\\Teste1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.vinicius\\Dev\\Repo\\GitHubPessoal\\AvaliacaoAnalista\\Teste1\\Teste1.csproj": {
+    "E:\\GitHub\\AvaliacaoAnalista\\Teste1\\Teste1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.vinicius\\Dev\\Repo\\GitHubPessoal\\AvaliacaoAnalista\\Teste1\\Teste1.csproj",
+        "projectUniqueName": "E:\\GitHub\\AvaliacaoAnalista\\Teste1\\Teste1.csproj",
         "projectName": "Teste1",
-        "projectPath": "C:\\Users\\m.vinicius\\Dev\\Repo\\GitHubPessoal\\AvaliacaoAnalista\\Teste1\\Teste1.csproj",
-        "packagesPath": "C:\\Users\\m.vinicius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.vinicius\\Dev\\Repo\\GitHubPessoal\\AvaliacaoAnalista\\Teste1\\obj\\",
+        "projectPath": "E:\\GitHub\\AvaliacaoAnalista\\Teste1\\Teste1.csproj",
+        "packagesPath": "C:\\Users\\cibel.DESKTOP-T0KJ3CN\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\AvaliacaoAnalista\\Teste1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\m.vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\cibel.DESKTOP-T0KJ3CN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\m.vinicius\\Dev\\Repo\\Azure\\TOS\\btp-core\\src\\Btp.Core.Entidades\\bin\\Debug": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://brasilterminalportuario.pkgs.visualstudio.com/_packaging/Nugets_BTP/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/brasilterminalportuario/_packaging/Nugets_BTP_BETA/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -43,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
