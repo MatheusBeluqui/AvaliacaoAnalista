@@ -5,13 +5,39 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
+using System.Text;
+
 namespace Teste1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            string? entrada;
+
+            while (true)
+            {
+                Console.Write("Digite uma string alfanumérica: ");
+                entrada = Console.ReadLine();
+
+                if (entrada == null)
+                    return;
+
+                if (entrada.Length > 0 && entrada.All(char.IsLetterOrDigit))
+                    break;
+
+                Console.WriteLine("Entrada inválida, digite apenas letras e números");
+            }
+
+            var resultado = new StringBuilder();
+
+            foreach (char c in entrada)
+            {
+                if (resultado.Length == 0 || resultado[resultado.Length - 1] != c)
+                    resultado.Append(c);
+            }
+
+            Console.WriteLine($"Retorno: {resultado}");
         }
     }
 }
