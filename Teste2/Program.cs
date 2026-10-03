@@ -12,7 +12,35 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            int quantidade;
+
+            while (true)
+            {
+                Console.Write("Digite um número entre 1 e 19: ");
+                string? entrada = Console.ReadLine();
+
+                if (entrada == null)
+                    return;
+
+                if (int.TryParse(entrada, out quantidade) && quantidade > 0 && quantidade < 20)
+                    break;
+
+                Console.WriteLine("Valor incorreto digite um número inteiro maior que 0 e menor que 20");
+            }
+
+            var sequencia = new List<int>();
+            int anterior = 0;
+            int atual = 1;
+
+            for (int i = 0; i < quantidade; i++)
+            {
+                sequencia.Add(atual);
+                int proximo = anterior + atual;
+                anterior = atual;
+                atual = proximo;
+            }
+
+            Console.WriteLine(string.Join(", ", sequencia));
         }
     }
 }
