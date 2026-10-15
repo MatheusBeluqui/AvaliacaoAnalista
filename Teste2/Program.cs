@@ -12,7 +12,42 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            int number;
+            while (true)
+            {
+                
+            Console.WriteLine("Digite um numero entre 0 e 20: ");
+            string input = Console.ReadLine() ?? string.Empty;
+
+            if (int.TryParse(input, out number) && number > 0 && number < 20)
+
+                {
+                    break;
+                }
+
+                Console.WriteLine("Numero invalido. Tente novamente! ");
+          
+            }
+
+            int previous = 1;
+            int current = 1;
+
+            for (int i = 0; i < number; i++)
+            {
+                Console.Write(previous);
+
+                if (i< number - 1)
+                {
+                    Console.Write(", ");
+                }
+
+                int next = previous + current;
+                previous = current;
+                current = next;
+            }
+
+            Console.WriteLine();
+
         }
     }
 }
