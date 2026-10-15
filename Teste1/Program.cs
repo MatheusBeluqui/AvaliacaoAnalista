@@ -11,7 +11,20 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.WriteLine("Digite uma sequencia de caracteres alfanuméricos: ");
+            string input = (Console.ReadLine() ?? string.Empty).ToUpper().Replace(" ", "");
+
+            string result = " ";
+
+            foreach (char character in input)
+            {
+                if(result.Length == 0 || result[^1] != character)
+                {
+                    result += character;
+                }
+            }
+
+            Console.WriteLine("Resultado: " + result);
         }
     }
 }
