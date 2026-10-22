@@ -1,9 +1,6 @@
-﻿/*
- Você deve implementar nessa aplicação console uma lógica que satisfaça os seguintes requisitos:
-    1 - A aplicação deve solicitar ao usuário que ele digite uma string alfanumérica.
-    2 - A aplicação deve remover todos os valores duplicados próximos, de forma que não hajam letras/números iguais juntos.
-    Exemplo: AAABCCDDD -> Retorno : ABCD
- */
+﻿
+using System;
+using System.Text;
 
 namespace Teste1
 {
@@ -11,7 +8,35 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Informe uma sequência alfanumérica: ");
+            string entrada = Console.ReadLine() ?? string.Empty;
+
+            if (string.IsNullOrWhiteSpace(entrada))
+            {
+                Console.WriteLine("Nenhum valor informado.");
+                return;
+            }
+
+            string resultado = RemoverRepeticoes(entrada);
+
+            Console.WriteLine($"Resultado: {resultado}");
+        }
+
+        private static string RemoverRepeticoes(string texto)
+        {
+            var resultado = new StringBuilder(texto.Length);
+            char? anterior = null;
+
+            foreach (char atual in texto)
+            {
+                if (atual == anterior)
+                    continue;
+
+                resultado.Append(atual);
+                anterior = atual;
+            }
+
+            return resultado.ToString();
         }
     }
 }

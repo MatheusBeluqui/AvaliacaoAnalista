@@ -1,10 +1,5 @@
-﻿/*
- Você deve implementar nessa aplicação console uma lógica que satisfaça os seguintes requisitos:
-    1 - A aplicação deve solicitar ao usuário que ele digite um número.
-    2 - A aplicação deve ler essa entrada e garantir que foi digitado um número inteiro, positivo, maior que 0 e menor que 20.
-    3 - A aplicação deve gerar uma sequência de Fibonacci com a quantidade de repetições informada pelo usuário.
-    Obs: A seguência de Fibonacci segue o padrão 1,1,2,3,5,8 e assim por diante, sendo o próximo número a soma do último número com o seu anterior.
-*/
+﻿
+using System;
 
 namespace Teste2
 {
@@ -12,7 +7,47 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Informe a quantidade de elementos: ");
+
+            if (!int.TryParse(Console.ReadLine(), out int quantidade) ||
+                quantidade <= 0)
+            {
+                Console.WriteLine("Informe um número inteiro maior que zero.");
+                return;
+            }
+
+            if (quantidade > 93)
+            {
+                Console.WriteLine("A quantidade máxima permitida é 93.");
+                return;
+            }
+
+            Console.WriteLine("Sequência de Fibonacci:");
+
+            GerarFibonacci(quantidade);
+        }
+
+        private static void GerarFibonacci(int quantidade)
+        {
+            ulong anterior = 0;
+            ulong atual = 1;
+
+            for (int i = 0; i < quantidade; i++)
+            {
+                Console.Write(atual);
+
+                if (i < quantidade - 1)
+                    Console.Write(", ");
+
+                if (i < quantidade - 1)
+                {
+                    ulong proximo = checked(anterior + atual);
+                    anterior = atual;
+                    atual = proximo;
+                }
+            }
+
+            Console.WriteLine();
         }
     }
 }
