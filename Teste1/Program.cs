@@ -11,7 +11,20 @@ namespace Teste1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.WriteLine("Digite uma string alfanumérica:");
+            string texto = Console.ReadLine() ?? "";
+
+            string resultado = "";
+
+            for (int i = 0; i < texto.Length; i++)
+            {
+                if (i == 0 || texto[i] != texto[i - 1])
+                {
+                    resultado += texto[i];
+                }
+            }
+
+            Console.WriteLine(resultado);
         }
     }
 }
