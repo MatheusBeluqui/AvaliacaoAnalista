@@ -12,7 +12,38 @@ namespace Teste2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            // escopo de variaveis 
+            int n = 0;
+            bool ok = false;            
+            int a = 1;
+            int b = 1;
+
+            // logica para verificar se o numero foi convertido ou nao
+
+            while (ok == false)
+            {
+                Console.WriteLine("Digite um número:");
+
+                // tenta converter a entrada para um número inteiro
+                ok = int.TryParse(Console.ReadLine(), out n); // out coloca o valor convertido na variavel n
+
+                //verificacao se o numero foi convertido ou nao
+                //verifica se o numero é positivo e menor que 20
+                if (ok == false || n <= 0 || n >= 20)
+                {
+                    Console.WriteLine("caracter invalido, Digite um numero inteiro positivo e menor que 20");
+                    ok = false;
+                }
+            }
+
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write(a + " ");
+                int soma = a + b;
+                a = b;
+                b = soma;
+            }
         }
     }
 }
