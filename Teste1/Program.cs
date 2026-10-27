@@ -5,13 +5,27 @@
     Exemplo: AAABCCDDD -> Retorno : ABCD
  */
 
+
 namespace Teste1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Boa sorte!");
+            Console.Write("Digite uma string alfanumérica: ");
+            string entrada = Console.ReadLine() ?? "";
+
+            string resultado = "";
+
+            foreach (char caractere in entrada)
+            {
+                if (resultado.Length == 0 || resultado[^1] != caractere)
+                {
+                    resultado += caractere;
+                }
+            }
+
+            Console.WriteLine($"Resultado: {resultado}");
         }
     }
 }
